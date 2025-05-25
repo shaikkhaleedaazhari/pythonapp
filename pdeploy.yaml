@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: py-deploy
+  name: py-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: py-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: py-deploy
+    spec:
+      containers:
+      - image: shaikkhaleedaazhari/pythonapp-1
+        name: pythonapp-1
+        resources: {}
+status: {}
