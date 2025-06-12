@@ -5,5 +5,5 @@ Resources:
       Properties:
         TaskDefinition: "arn:aws:ecs:us-east-1:715841362372:task-definition/pythontask:1"
         LoadBalancerInfo:
-          ContainerName: "pythonapp"
+          ContainerName: "pythoncontainer"
           ContainerPort: 5000
